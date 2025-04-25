@@ -33,7 +33,7 @@ body {
 }
 
 .nav-links a {
-    color: rgb(255, 255, 255);
+    color: rgb(231, 229, 229);
     text-decoration: none;
     font-size: 18px;
     font-weight: 500;
@@ -42,7 +42,7 @@ body {
 /* Hero Section Styles */
 .hero {
     background: #003366;
-    color: #faf3f9;
+    color: rgb(255, 255, 255);
     padding: 60px 20px;
     text-align: center;
     border-bottom-left-radius: 50px;
@@ -63,7 +63,7 @@ body {
 
 /* Best Laptop Offers Section */
 .best-offers {
-    background: #eff0f0;
+    background: #f2f2f2;
     padding: 40px 20px;
     text-align: center;
 }
@@ -104,7 +104,7 @@ body {
 
 .laptop button {
     padding: 10px;
-    background: #ffffff;
+    background: #007BFF;
     border: none;
     color: white;
     border-radius: 5px;
@@ -197,7 +197,7 @@ body {
 
 /* Contact Section */
 .contact {
-    background: #a1c5df;
+    background: #fff;
     text-align: center;
     padding: 40px 20px;
     border-top: 2px solid #eee;
