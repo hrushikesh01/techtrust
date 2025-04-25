@@ -63,7 +63,7 @@ body {
 
 /* Best Laptop Offers Section */
 .best-offers {
-    background: #fff;
+    background: ##e1e3e3;
     padding: 40px 20px;
     text-align: center;
 }
@@ -197,7 +197,7 @@ body {
 
 /* Contact Section */
 .contact {
-    background: #fff;
+    background: #a1c5df;
     text-align: center;
     padding: 40px 20px;
     border-top: 2px solid #eee;
