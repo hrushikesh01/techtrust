@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Laptop Details - Tech Trust</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #d7e9f7, #f2f7ff);
+      color: #333;
+    }
+
+    /* NAVBAR */
+    nav {
+      background: #007bff;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav .nav-links {
+      display: flex;
+      gap: 25px;
+    }
+
+    nav .nav-links a {
+      text-decoration: none;
+      color: white;
+      transition: 0.3s;
+    }
+
+    nav .nav-links a:hover {
+      text-shadow: 0 0 10px white;
+    }
+
+    /* MAIN LAYOUT */
+    .container {
+      display: flex;
+      padding: 40px;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .images {
+      width: 350px;
+      max-height: 500px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 10px;
+      border-radius: 20px;
+      background: rgba(255, 255, 255, 0.6);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    }
+
+    .images img {
+      width: 100%;
+      border-radius: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .images img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    }
+
+    .details {
+      max-width: 500px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in-out;
+    }
+
+    .details h2 {
+      margin-bottom: 10px;
+      color: #007bff;
+    }
+
+    .specs {
+      margin: 20px 0;
+    }
+
+    .specs p {
+      margin: 8px 0;
+    }
+
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #28a745;
+    }
+
+    .cta-btn {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      background: #007bff;
+      color: white;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background: #0056b3;
+    }
+
+    /* TERMS */
+    .terms {
+      margin: 40px auto;
+      max-width: 900px;
+      padding: 25px;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 15px;
+    }
+
+    .terms h3 {
+      cursor: pointer;
+      background: #007bff;
+      color: white;
+      padding: 10px;
+      border-radius: 10px;
+    }
+
+    .terms-content {
+      display: none;
+      margin-top: 15px;
+      padding-left: 15px;
+    }
+
+    /* SCROLL TO TOP */
+    #scrollTop {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #007bff;
+      color: white;
+      padding: 10px 15px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      display: none;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Tech Trust</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="#">Get Verified</a>
+      <a href="#">Cart</a>
+      <a href="#">Liked</a>
+      <a href="login.html">Logout</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <!-- Left: Images -->
+    <div class="images">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcTd_FjUKJu6UiSRbmQN33asqX_JxeSuizdhjzbpjP2wy0940QDQsrQVTcHOL2_1RlhMXvQW19ruA-Ar2gg-66-A02_Eq_A2erFdKG8773ARF4Ok6oPb9xAZ_A" alt="Laptop 1">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSSzBwnKPDMFtDq2DaAINCJ5JN4_qHfasDUg9aG69068PZkHUEMHgagzAo7lBkcuLyOs2fMUM702h28tPjGikzUtDkeQpjhWQDSrXHHSSGAjtA2nDXJFzgTMQ" alt="Laptop 2">
+      <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT-4Kz8ST5wJeXIhdTxz0Fwa7wM1FWY5H_CFjjv8w1vUmUKnysglDjFTzZF1DztnX-RdxYY5DYC-ud__WGvgd-QOoWmW7kih18bnmJUZ_UzRkfE2XraBV_3sg" alt="Laptop 3">
+    </div>
+
+    <!-- Right: Details -->
+    <div class="details">
+        <h2>Dell Inspiron 15</h2>
+        <div class="specs">
+          <p><strong>Processor:</strong> Intel Core i5 (12th Gen)</p>
+          <p><strong>RAM:</strong> 8GB DDR4</p>
+          <p><strong>Storage:</strong> 512GB SSD</p>
+          <p><strong>Graphics:</strong> Intel Iris Xe</p>
+        </div>
+        <p class="price">₹500/month (with refundable deposit)</p>
+        <a href="booking.html"><button class="cta-btn">Book This Laptop</button></a>
+      
+        <div style="margin-top: 30px;">
+          <h3 style="color:#007bff;">More About This Laptop</h3>
+          <p style="margin-top: 10px;">
+            This Dell Inspiron is built for students and professionals who need a perfect blend of performance and portability. With its fast SSD, reliable battery life, and lightweight design, it’s ideal for coding, browsing, streaming, and assignments.
+          </p>
+        </div>
+      </div>
+      
+
+  <!-- Terms -->
+  <div style="margin-top: 40px;">
+    <h3 style="color:#007bff;">Terms & Conditions</h3>
+    <ul style="margin-top: 10px; padding-left: 20px; line-height: 1.8;">
+      <li>Laptop should be returned in proper condition.</li>
+      <li>Only eligible students (18+) can apply.</li>
+      <li>Deposit is refundable after the return of the device.</li>
+      <li>Device misuse or damage will lead to penalties.</li>
+      <li>Device must not be used for illegal activities.</li>
+      <li>ID verification and CGPA report are mandatory.</li>
+      <li>Booking is valid for one device per student only.</li>
+      <li>Tech Trust reserves the right to cancel any booking.</li>
+    </ul>
+  </div>
+  
+
+  <!-- Scroll to top -->
+  <button id="scrollTop" onclick="scrollToTop()">↑</button>
+
+  <script>
+    function toggleTerms() {
+      const content = document.getElementById('terms-content');
+      content.style.display = content.style.display === 'block' ? 'none' : 'block';
+    }
+
+    window.onscroll = () => {
+      const scrollTop = document.getElementById("scrollTop");
+      if (document.documentElement.scrollTop > 100) {
+        scrollTop.style.display = "block";
+      } else {
+        scrollTop.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+
+</body>
+</html>

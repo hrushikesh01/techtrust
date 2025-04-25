@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login - Tech Trust</title>
+  <style>
+    body {
+      background: url('https://static.vecteezy.com/system/resources/thumbnails/030/221/116/small_2x/mockup-of-beautiful-laptop-with-multicolor-background-generative-ai-illustration-photo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: rgba(255, 255, 255, 0.8); /* Slight transparency for better readability */
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+      width: 300px;
+    }
+    h2 {
+      margin-bottom: 20px;
+      color: #007BFF;
+    }
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      width: 100%;
+      padding: 10px;
+      background: #007BFF;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #0056b3;
+    }
+    .back {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .back a {
+      text-decoration: none;
+      color: #007BFF;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login</h2>
+    <input type="text" id="username" placeholder="College ID / Email" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="validateLogin()">Login</button>
+    <div class="back">
+      <a href="index.html">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    // Dummy login credentials for validation (replace with your logic)
+    const validUsername = "student@college.com";
+    const validPassword = "password123";
+
+    function validateLogin() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      // Check if username and password match the valid credentials
+      if (username === validUsername && password === validPassword) {
+        window.location.href = "details.html"; // Redirect to the details page after successful login
+      } else {
+        alert("Invalid credentials. Please try again.");
+      }
+    }
+  </script>
+</body>
+</html>

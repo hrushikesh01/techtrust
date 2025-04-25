@@ -1,0 +1,225 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f1f1f1;
+}
+
+/* Header Styles */
+.header {
+    background: #007BFF;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Hero Section Styles */
+.hero {
+    background: #003366;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Best Laptop Offers Section */
+.best-offers {
+    background: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.best-offers h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.laptop-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.laptop {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.laptop:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.laptop img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.laptop h3 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.laptop button {
+    padding: 10px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.laptop button:hover {
+    background: #0056b3;
+}
+
+/* Features Section */
+.features {
+  background: #e6f0fa;
+  padding: 50px 20px;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.features h2 {
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #0a2e56;
+}
+
+.feature-slider {
+  display: flex;
+  width: calc(100vw * 7); /* 7 features */
+}
+
+.feature {
+  width: 100vw;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 30px;
+  background: #ffffff;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  margin: 0 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.feature img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.feature h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #1c1c1c;
+}
+
+.feature p {
+  font-size: 16px;
+  color: #444;
+  padding: 0 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .feature h3 {
+    font-size: 20px;
+  }
+  .feature p {
+    font-size: 14px;
+  }
+}
+
+
+/* Animation for continuous sliding */
+@keyframes slideFeatures {
+    0% { transform: translateX(0%); }
+    12.5% { transform: translateX(-100vw); }
+    25% { transform: translateX(-200vw); }
+    37.5% { transform: translateX(-300vw); }
+    50% { transform: translateX(-400vw); }
+    62.5% { transform: translateX(-500vw); }
+    75% { transform: translateX(-600vw); }
+    87.5% { transform: translateX(-700vw); }
+    100% { transform: translateX(-800vw); }
+}
+
+
+/* Contact Section */
+.contact {
+    background: #fff;
+    text-align: center;
+    padding: 40px 20px;
+    border-top: 2px solid #eee;
+}
+
+.contact h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .laptop-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .feature-slider {
+        flex-direction: column;
+    }
+}
